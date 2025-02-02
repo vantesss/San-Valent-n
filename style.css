@@ -1,0 +1,91 @@
+body {
+    background-color: #ffebf2;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    overflow: hidden;
+}
+
+.tarjeta {
+    background: white;
+    border: 5px solid pink;
+    border-radius: 15px;
+    width: 400px;
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(255, 0, 102, 0.5);
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    color: #ff4081;
+    font-size: 28px;
+}
+
+.gif {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.botones {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #d81b60;
+}
+
+#no {
+    position: relative;
+}
+
+.lluvia {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 192, 203, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    text-align: center;
+    padding-top: 20%;
+}
+
+/* 🌸 Estilos para la lluvia de emojis */
+.emoji {
+    position: absolute;
+    font-size: 30px;
+    animation: caer 3s linear;
+}
+
+@keyframes caer {
+    from {
+        transform: translateY(-100vh);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
